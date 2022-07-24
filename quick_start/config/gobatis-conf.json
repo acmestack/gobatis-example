@@ -1,0 +1,17 @@
+{
+  "driver": "mysql",
+  "path": "./quick_start",
+  "package": "test",
+  "namespace": "test",
+  "modelFile": "test_model.go",
+  "tagName": "column",
+  "mapperFile": "xml",
+  "plugin": "",
+  "keyword": false,
+  "tableName": "",
+  "dbName": "test",
+  "host": "localhost",
+  "port": 3306,
+  "user": "root",
+  "password": "123456"
+}
