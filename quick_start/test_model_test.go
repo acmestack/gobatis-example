@@ -33,12 +33,12 @@ func connect() factory.Factory {
 		gobatis.SetMaxConn(100),
 		gobatis.SetMaxIdleConn(50),
 		gobatis.SetDataSource(&datasource.MysqlDataSource{
-			Host:     "localhost",
-			Port:     3306,
-			DBName:   "test",
-			Username: "root",
-			Password: "123456",
-			Charset:  "utf8",
+			Host:     "localhost", // 数据库IP
+			Port:     3306,        // 数据库端口
+			DBName:   "test",      // 数据库名
+			Username: "root",      // 数据库用户名
+			Password: "123456",    // 数据库密码
+			Charset:  "utf8",      // 编码格式
 		}))
 }
 
@@ -55,8 +55,7 @@ func init() {
 func TestTestTable_Insert(t *testing.T) {
 	testTable := &TestTable{
 		CreateTime: time.Now(),
-		Id:         1,
-		Username:   "user1",
+		Username:   "user",
 		Password:   "123456",
 	}
 	result, id, err := testTable.Insert(sessionManager.NewSession())
