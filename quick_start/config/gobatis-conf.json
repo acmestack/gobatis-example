@@ -1,11 +1,11 @@
 {
   "driver": "mysql",
-  "path": "./quick_start",
+  "path": "./test",
   "package": "test",
   "namespace": "test",
   "modelFile": "test_model.go",
   "tagName": "column",
-  "mapperFile": "xml",
+  "mapperFile": "template",
   "plugin": "",
   "keyword": false,
   "tableName": "",
