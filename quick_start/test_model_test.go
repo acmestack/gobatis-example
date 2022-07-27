@@ -1,9 +1,9 @@
-package test
+package quick_start
 
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/acmestack/gobatis-example/quick_start/db"
+	"github.com/acmestack/gobatis-example/transaction/db"
 	"testing"
 	"time"
 )

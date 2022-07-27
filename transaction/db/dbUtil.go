@@ -1,7 +1,6 @@
 package db
 
 import (
-	"fmt"
 	"github.com/acmestack/gobatis"
 	"github.com/acmestack/gobatis/datasource"
 	"github.com/acmestack/gobatis/factory"
@@ -11,10 +10,6 @@ import (
 var SessionManager *gobatis.SessionManager
 
 func init() {
-	err := gobatis.RegisterMapperFile("./xml/test_table_mapper.xml")
-	if err != nil {
-		fmt.Println("parse xml is error:", err.Error())
-	}
 	SessionManager = gobatis.NewSessionManager(connect())
 }
 

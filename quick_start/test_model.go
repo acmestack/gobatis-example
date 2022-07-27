@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package test
+package quick_start
 
 import (
 	"github.com/acmestack/gobatis"
